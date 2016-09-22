@@ -64,12 +64,29 @@ body {
 	background-color: #E2E4E6;
 	margin: 10px;
 	border-radius: 5px;
-	padding: 5px;
-	padding-top: 10px;
+	padding: 13px;
+	padding-right: 18px;
 	width: 237px;
 	height: 55px;
 }
 
-
-
+.tarjeta {
+	padding-top: 20px;
+	display: block;
+	text-decoration : none;
+	color: #949494;
+	font-weight: normal;
+}
+.textBold {
+	font-weight: bold;
+}
+.areaTexto {
+	height: 30px;
+	display: block;
+	resize: none;
+	width: 237px;
+	border : none;
+	border-radius: 3px;
+	margin-top: 10px;
+}
 
