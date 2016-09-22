@@ -1,20 +1,26 @@
 window.addEventListener("load",function(){
-	var span = document.getElementById('span');
+	var span = document.getElementById("span");
 	var boton = document.getElementById("boton");
-	var lista = document.getElementById("lista");
-	var box = document.getElementById("box")
+	var texto = document.getElementById("texto");
+	var box = document.getElementById("box");
+	var form = document.getElementById("form");
+	var contenedor = document.getElementById("contenedor");
+
 
 
 	span.addEventListener("click",function(e){
 		e.preventDefault();
-		mostrarBoton();
+		mostrarFormulario();
 
 	});
 
-	function mostrarBoton(){
-		boton.style.cssText = "display:block";
-		span.style.cssText = "display:none";
-		lista.style.cssText = "display:block";
-		box.style.cssText = "display:block"
+	
+
+	function mostrarFormulario(){
+		box.style.display = "inline-block";
+		span.style.display = "none";
+		form.style.display = "inline-block";
 	}
+	
+	
 });

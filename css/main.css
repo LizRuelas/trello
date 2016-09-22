@@ -1,47 +1,75 @@
 body {
-	background-color: #81DAF5;
-}
-#span {
-	background-color: #0079BF;
-	padding: 10px;
-	border-radius: 7px;
-	color: white;
-	font-size: 15px;
-	display: block;
-	width: 13%;
-	cursor: pointer;
+	margin: 0px;
+	background-color: #89609E;
+	font-size: 14px;
 	font-family: helvetica;
+}
+#cabezera {
+	background-color: #755287;
+	height: 30px;
+	padding: 10px;
+	background-image: url(https://d78fikflryjgj.cloudfront.net/images/50b4ebc64391dc394a38e73aed57f0e2/header-logo.png);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+#span {
+	background-color: #755287;
+	padding: 10px;
+	border-radius: 5px;
+	color: white;
+	display: block;
+	width: 15%;
+	cursor: pointer;
 	margin: 1%;
 }
 
-
 #span:hover {
-	background-color: #006BA9;
+	background-color: #60436F;
 }
 
 #boton {
 	margin-top: 10px;
-	display: none;
-}
-#lista {
-	background-color: rgb(227,228,231);
-	padding: 10px;
+	background-color: #5EB54A;
 	border-style: none;
-	border-color: #aaa;
+	border-radius: 3px;
+	color: white;
+	padding: 8px;
+	box-shadow: 0 1px 0 #3F6F21;
+	font-weight: bold;
+	font-size: 14px;
+	font-family: helvetica;	
+}
+#texto {
+	background-color: rgb(227,228,231);
+	padding: 8px 57px 8px 8px;
+	border-style: none;
+	border: 1px solid #AAAAAA;
     box-shadow: inset 0 1px 8px rgba(0,0,0,.15); 
 	border-radius: 7px;
-	font-size: 15px;
-	width: 70%;
 	cursor: pointer;
+	font-size: 14px;
 	font-family: helvetica;
-	display: none;
 
 }
 #box {
 	background-color: #E2E4E6;
+	margin: 10px;
+	border-radius: 5px;
 	padding: 5px;
-	width: 18%;
-	height: auto;
+	width: 237px;
 	display: none;
 }
+.lista {
+	background-color: #E2E4E6;
+	margin: 10px;
+	border-radius: 5px;
+	padding: 5px;
+	padding-top: 10px;
+	width: 237px;
+	height: 55px;
+}
+
+
+
 
