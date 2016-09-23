@@ -5,12 +5,11 @@ window.addEventListener("load",function(){
 	var box = document.getElementById("box");
 	var form = document.getElementById("form");
 	var contenedor = document.getElementById("contenedor");
-
-
-
+	
 	span.addEventListener("click",function(e){
 		e.preventDefault();
 		mostrarFormulario();
+		texto.focus();
 	});
 
 	boton.addEventListener("click",function(e){
@@ -42,5 +41,21 @@ window.addEventListener("load",function(){
 		nuevaTarjeta.appendChild(nodoTarjeta);
 		lista.appendChild(nuevaTarjeta);
 		nuevaTarjeta.classList.add("tarjeta");
+
+		nuevaTarjeta.addEventListener("click", function(){
+		nuevaTarjeta.style.display = "none";
+
+		var area = document.createElement("textarea");
+		area.classList.add("areaTexto");
+		lista.appendChild(area);
+		lista.insertBefore(area,nodo.nextSibling);
+
+		var nuevoBoton = document.createElement("button");
+		var nodoBoton = document.createTextNode("Añadir");
+		nuevoBoton.classList.add("nuevoBoton");
+		nuevoBoton.appendChild(nodoBoton);
+		lista.appendChild(nuevoBoton);
+		lista.insertBefore(nuevoBoton,area.nextSibling);
+		});
 	}
 });

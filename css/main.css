@@ -28,7 +28,7 @@ body {
 	background-color: #60436F;
 }
 
-#boton {
+#boton , .nuevoBoton {
 	margin-top: 10px;
 	background-color: #5EB54A;
 	border-style: none;
@@ -51,6 +51,7 @@ body {
 	font-size: 14px;
 	font-family: helvetica;
 
+
 }
 #box {
 	background-color: #E2E4E6;
@@ -67,7 +68,7 @@ body {
 	padding: 13px;
 	padding-right: 18px;
 	width: 237px;
-	height: 55px;
+	height: auto;
 }
 
 .tarjeta {
@@ -81,7 +82,7 @@ body {
 	font-weight: bold;
 }
 .areaTexto {
-	height: 30px;
+	height: 60px;
 	display: block;
 	resize: none;
 	width: 237px;
