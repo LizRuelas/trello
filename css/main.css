@@ -12,7 +12,6 @@ body {
 	background-repeat: no-repeat;
 	background-position: center;
 }
-
 #span {
 	background-color: #755287;
 	padding: 10px;
@@ -23,11 +22,9 @@ body {
 	cursor: pointer;
 	margin: 1%;
 }
-
 #span:hover {
 	background-color: #60436F;
 }
-
 #boton , .nuevoBoton {
 	margin-top: 10px;
 	background-color: #5EB54A;
@@ -50,8 +47,6 @@ body {
 	cursor: pointer;
 	font-size: 14px;
 	font-family: helvetica;
-
-
 }
 #box {
 	background-color: #E2E4E6;
@@ -70,7 +65,6 @@ body {
 	width: 237px;
 	height: auto;
 }
-
 .tarjeta {
 	padding-top: 20px;
 	display: block;

@@ -5,19 +5,16 @@ window.addEventListener("load",function(){
 	var box = document.getElementById("box");
 	var form = document.getElementById("form");
 	var contenedor = document.getElementById("contenedor");
-
 	span.addEventListener("click",function(e){
 		e.preventDefault();
 		mostrarFormulario();
 		texto.focus();
 	});
-
 	boton.addEventListener("click",function(e){
 		e.preventDefault();
 		mostrarLista();
 		texto.value = "";
 	});
-
 	function mostrarFormulario(){
 		box.style.display = "inline-block";
 		span.style.display = "none";
@@ -34,29 +31,24 @@ window.addEventListener("load",function(){
 		contenedor.insertBefore(lista,span.previousSibling);
 		lista.style.display = "inline-block";
 		lista.style.cssFloat = "left";
-
 		var nuevaTarjeta = document.createElement("a");
 		nuevaTarjeta.href= "#";
 		var nodoTarjeta =document.createTextNode("Añadir una tarjeta ...")
 		nuevaTarjeta.appendChild(nodoTarjeta);
 		lista.appendChild(nuevaTarjeta);
 		nuevaTarjeta.classList.add("tarjeta");
-
 		nuevaTarjeta.addEventListener("click", function(){
 			nuevaTarjeta.style.display = "none";
-
 			var area = document.createElement("textarea");
 			area.classList.add("areaTexto");
 			lista.appendChild(area);
 			lista.insertBefore(area,nodo.nextSibling);
-
 			var nuevoBoton = document.createElement("button");
 			var nodoBoton = document.createTextNode("Añadir");
 			nuevoBoton.classList.add("nuevoBoton");
 			nuevoBoton.appendChild(nodoBoton);
 			lista.appendChild(nuevoBoton);
 			lista.insertBefore(nuevoBoton,area.nextSibling);
-
 		nuevoBoton.addEventListener("click",function(){
 			area.style.display= "none";
 			nuevoBoton.style.display="none";
@@ -68,7 +60,6 @@ window.addEventListener("load",function(){
 			lista.appendChild(listaTarjeta);
 			lista.insertBefore(listaTarjeta,nodo.nextSibling);
 		}); 
-
 		});
 	}
 });
