@@ -90,4 +90,12 @@ body {
 	border-radius: 3px;
 	margin-top: 10px;
 }
-
+.areaTarjeta {
+	width: 237px;
+	resize: none;
+	border:none;
+	border-radius: 3px;
+	display: block;
+	margin-top: 15px;
+	padding: 5px;
+}
