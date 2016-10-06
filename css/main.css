@@ -88,6 +88,8 @@ body {
 	width: 237px;
 	height: auto;
 	vertical-align: top;
+	display: inline-block;
+	font-weight: bold;
 }
 .tarjeta {
 	padding-top: 20px;
@@ -97,9 +99,7 @@ body {
 	font-weight: normal;
 	
 }
-.textBold {
-	font-weight: bold;
-}
+
 .areaTexto {
 	height: 60px;
 	display: block;
