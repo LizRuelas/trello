@@ -86,6 +86,7 @@ function soltar(e){
 	var elementoArrastrado = document.getElementById(e.dataTransfer.getData("text"));
 	this.insertBefore(elementoArrastrado , this.children[1]);
 	this.children[1].classList.remove("opacity");
+	this.classList.remove("bcolor");
 	
 }
 function dragover(e){
