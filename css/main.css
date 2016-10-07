@@ -141,3 +141,6 @@ body::-webkit-scrollbar-thumb {
 	opacity: 0.8;
 	border: 2px dotted  black;
 }
+.bcolor {
+	background-color: #DC99CE;
+}
