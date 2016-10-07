@@ -78,11 +78,13 @@ function crearNuevaTarjeta(){
 function empiezaArrastrar(e){
 	e.dataTransfer.setData("text", this.id);
 	console.log("empieza");
+	this.classList.add("opacity");
 }
 
 function soltar(e){
 	var elementoArrastrado = document.getElementById(e.dataTransfer.getData("text"));
 	this.insertBefore(elementoArrastrado , this.children[1]);
+	this.children[1].classList.remove("opacity");
 }
 function dragover(e){
 	e.preventDefault();
