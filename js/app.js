@@ -44,7 +44,7 @@ function crearLista(){
 	lista.addEventListener("drop" , soltar);
 	lista.addEventListener("dragover", dragover);
 	lista.addEventListener("dragleave" , dragleave);
-
+	lista.addEventListener("dragend" , dragend);
 }
 
 function añadirNuevaTarjeta(){
@@ -87,15 +87,22 @@ function soltar(e){
 	this.insertBefore(elementoArrastrado , this.children[1]);
 	this.children[1].classList.remove("opacity");
 	this.classList.remove("bcolor");
-	
+	this.classList.remove("animated" , "tada");
 }
+
 function dragover(e){
 	e.preventDefault();
 	this.classList.add("bcolor");
+	
 }
+
 function dragleave(e){
 	e.preventDefault();
 	this.classList.remove("bcolor");
+}
+
+function dragend(e){
+	this.classList.add("animated" , "tada");
 }
 
 
