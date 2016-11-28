@@ -16,7 +16,7 @@ body {
     overflow-x 			:scroll;	
 }
 #cabezera {
-	background-color 	:#755287;
+	background-color 	:rgba(0,0,0,.15);
 	height				:30px;
 	padding 			:10px;
 	background-image	:url(https://d78fikflryjgj.cloudfront.net/images/50b4ebc64391dc394a38e73aed57f0e2/header-logo.png);
@@ -34,7 +34,7 @@ body {
 	margin-left 		:-32px;
 }
 #span {
-	background-color 	:#755287;
+	background-color 	:rgba(0,0,0,.15);
 	padding 			:10px;
 	border-radius 		:5px;
 	color 				:white;
@@ -44,7 +44,7 @@ body {
 	margin 				:1%;
 }
 #span:hover {
-	background-color	:#60436F;
+	background-color	:rgba(0,0,0,.30);
 }
 #boton , .nuevoBoton {
 	margin-top 			:10px;
@@ -117,6 +117,7 @@ body {
 	margin-top 			:10px;
 	padding-top 		:5px;
 	padding-left 		:5px;
+	font-family			:helvetica;
 }
 .areaTarjeta {
 	width 				:100%;
@@ -148,3 +149,28 @@ body::-webkit-scrollbar-thumb {
 .icono {
 	margin-left 		:20px;
 }
+.cambioColor {
+	float: right;
+	padding: 5px 10px;
+	border-radius: 10px;
+	background-color: #D6DADC;
+}
+.azul {
+	background-color: #0079BF;
+}
+.verde {
+	background-color: #519839;
+}
+.naranja {
+	background-color: #D29034;
+}
+.morado {
+	background-color: #89609E;
+}
+.rosado {
+	background-color: #CD5A91;
+}
+.celeste {
+	background-color: #00AECC;
+}
+

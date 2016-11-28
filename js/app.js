@@ -5,10 +5,15 @@ window.addEventListener("load" , cargarPagina);
 	var texto = document.getElementById("texto");
 	var box = document.getElementById("box");
 	var contenedor = document.getElementById("contenedor");
+	var select = document.getElementById("seleccion");
+	var body = document.getElementById("body");
+
 function cargarPagina(){
 	span.addEventListener("click", añadirLista); 
 	boton.addEventListener("click", mostrarSpan);
 	boton.addEventListener("click", crearLista);
+	console.log(select);
+	select.addEventListener("change", cambiarColor);
 }
 function añadirLista(e){
 	e.preventDefault();
@@ -106,7 +111,30 @@ function dragleave(e){
 function dragend(e){
 	this.classList.add("animated" , "tada");
 }
-
+function cambiarColor(){
+	var value = select.value;
+	console.log(value)
+	body.classList.remove("azul");
+	body.classList.remove("verde");
+	body.classList.remove("naranja");
+	body.classList.remove("rosado");
+	body.classList.remove("morado");
+	body.classList.remove("celeste");
+	if (value == "a"){
+		body.classList.add("azul");
+	} else if (value == "v"){
+		body.classList.add("verde");
+	} else if(value == "n"){
+		body.classList.add("naranja");
+	} else if(value == "m"){
+		body.classList.add("morado");
+	} else if (value == "r") {
+		body.classList.add("rosado");
+	} else {
+		body.classList.add("celeste");
+	}
+	
+}
 
 
 
